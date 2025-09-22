@@ -15,6 +15,11 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Swirlzy custom variants
+        cart: "bg-swirlzy-teal text-white hover:bg-swirlzy-teal-dark font-bold rounded-full shadow-soft transition-all duration-300 hover:scale-105",
+        price: "bg-swirlzy-teal text-white px-4 py-2 rounded-full font-bold text-sm",
+        explore: "bg-foreground text-background hover:bg-foreground/90 font-bold rounded-full px-6 py-3",
+        add: "bg-swirlzy-teal text-white hover:bg-swirlzy-teal-dark w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold",
       },
       size: {
         default: "h-10 px-4 py-2",

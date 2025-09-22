@@ -47,16 +47,26 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        // Swirlzy brand colors
+        swirlzy: {
+          orange: "hsl(var(--swirlzy-orange))",
+          "orange-light": "hsl(var(--swirlzy-orange-light))",
+          blue: "hsl(var(--swirlzy-blue))",
+          teal: "hsl(var(--swirlzy-teal))",
+          "teal-dark": "hsl(var(--swirlzy-teal-dark))",
         },
+      },
+      backgroundImage: {
+        "gradient-orange": "var(--gradient-orange)",
+        "gradient-blue": "var(--gradient-blue)",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        card: "var(--shadow-card)",
+      },
+      fontFamily: {
+        heading: "var(--font-heading)",
+        body: "var(--font-body)",
       },
       borderRadius: {
         lg: "var(--radius)",

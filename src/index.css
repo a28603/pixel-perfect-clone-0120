@@ -2,57 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Swirlzy Design System - Bakery Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Background and foreground */
+    --background: 42 15% 94%;
+    --foreground: 0 0% 13%;
+
+    /* Brand colors - Swirlzy palette */
+    --swirlzy-orange: 35 85% 70%;
+    --swirlzy-orange-light: 42 88% 78%;
+    --swirlzy-blue: 200 65% 75%;
+    --swirlzy-teal: 168 55% 45%;
+    --swirlzy-teal-dark: 168 60% 35%;
+
+    /* Semantic colors */
+    --primary: 168 55% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 85% 70%;
+    --secondary-foreground: 0 0% 13%;
+
+    --accent: 200 65% 75%;
+    --accent-foreground: 0 0% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 13%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 42 15% 94%;
+    --muted-foreground: 0 0% 45%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 168 55% 45%;
 
-    --radius: 0.5rem;
+    --radius: 1.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom gradients */
+    --gradient-orange: linear-gradient(135deg, hsl(var(--swirlzy-orange)) 0%, hsl(var(--swirlzy-orange-light)) 100%);
+    --gradient-blue: linear-gradient(135deg, hsl(var(--swirlzy-blue)) 0%, hsl(200 70% 85%) 100%);
+    
+    /* Typography */
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Shadows */
+    --shadow-soft: 0 8px 25px -8px hsl(var(--swirlzy-teal) / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.08);
   }
 
   .dark {
